@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  function renderBlock() {
+    var page = document.referrer || document.location.href;
+    var place = page.indexOf('wrongurl.mts.ru') >= 0 ? 'vabmp10aw' : 'l6xym9xbu';
+    window['mts.ssp.config'] = {
+      domain: 'sa.rtb.mts.ru',
+      page: document.location.href
+    };
+    (window['mts.ssp.places'] = window['mts.ssp.places'] || []).push({
+      id: place,
+      selector: '#streamb',
+      type: 'banner',
+    });
+  }
+  renderBlock();
+</script>
+<script src="js/loader.js" async=""></script>
+<div id="streamb"></div>
+
+
+
+</body></html>
